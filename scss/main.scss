@@ -1,0 +1,80 @@
+// ! nesting
+// body {
+//     background-color: lightblue;
+// }
+
+// ? nesting
+// .main{
+//     background-color: lightblue;
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     .main-paragraph {
+//         font-size: 1.4em;
+//     }
+// }
+
+// ? parent selector
+// .main {
+//   .container & {
+//     background-color: aqua;
+//   }
+
+//   &:hover {
+//     background-color: black;
+//   }
+//   & &-paragraph {
+//     font-size: 1.2em;
+//   }
+//   #{&}-paragraph{
+//     font-size: large;
+//   }
+// }
+
+// ! 3. variable
+// ? CSS variables
+// :root {
+//   --primary-color: #f4f1de;
+//   --secondary-color: #f4f1de;
+//   --text-color: #e07a5f;
+// }
+
+// body {
+//   background-color: var(--primary-color);
+// }
+
+// ? Sass variables
+// $secondary-color: #f4f1de;
+// $text-color: #e07a5f;
+
+// body {
+//   $primary-color: #f4f1de !global;
+//   background-color: $primary-color;
+// }
+
+// h1 {
+//     color: $text-color;
+//     background-color: $primary-color;
+// }
+
+// ? map
+// $alert-danger: red;
+// $alert-success: green;
+// $alert-warning: orange;
+
+// $alert: (
+//   'danger': red,
+//   'success': green,
+//   'warning': orange,
+// );
+// h1 {
+//   color: map-get($alert, 'success');
+// }
+
+// ! mixin
+@include
+@mixin name {
+    
+}
